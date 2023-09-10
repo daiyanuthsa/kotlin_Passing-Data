@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Tugas2_papb"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".DaftarActivity"
             android:exported="false"
             android:label="@string/title_activity_daftar"

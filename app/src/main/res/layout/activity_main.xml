@@ -43,6 +43,7 @@
                 app:endIconMode="clear_text"
                 app:errorEnabled="true"
                 app:errorIconDrawable="@drawable/baseline_cancel_24"
+
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -61,7 +62,7 @@
                 app:endIconMode="password_toggle"
                 app:errorEnabled="true"
                 app:startIconDrawable="@drawable/baseline_lock_24"
-                android:layout_marginBottom="8dp">
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passInput"
@@ -72,13 +73,61 @@
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/lupaPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/poppins_semibold"
+
+                    android:text="Forget Password?"
+                    android:textColor="#6750A3"
+                    android:textFontWeight="600"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="52dp"
                 app:cornerRadius="10dp"
                 android:textSize="20dp"
-                android:text="Login" />
+
+             android:text="Login" /> <!--Login Button-->
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/poppins_semibold"
+
+                android:text="Or"
+                android:textColor="#6750A3"
+                android:textFontWeight="600"
+                android:textSize="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FEFAFD"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:cornerRadius="10dp"
+                app:rippleColor="#673AB7"
+                app:strokeColor="#7C4747"
+                app:strokeWidth="2dp" /> <!--Sign Up Button-->
 
         </LinearLayout>
 

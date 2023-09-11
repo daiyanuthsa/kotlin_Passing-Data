@@ -19,9 +19,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/text1"
@@ -29,17 +27,106 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Sign Up"
+                android:text="Get Started"
                 android:textFontWeight="800"
                 android:textSize="28dp" />
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/LastName"-->
+<!--                style="?attr/textInputFilledStyle"-->
+<!--                android:layout_width="182dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Nama"-->
+<!--                app:boxBackgroundColor="#FEFAFD"-->
+<!--                app:boxStrokeColor="#6750A3">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/Firstname"-->
+<!--                style="?attr/textInputFilledStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Nama"-->
+<!--                app:boxBackgroundColor="#FEFAFD"-->
+<!--                app:boxStrokeColor="#6750A3">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/LastName"
+                    style="?attr/textInputFilledStyle"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama"
+                    app:boxBackgroundColor="#FEFAFD"
+                    app:boxStrokeColor="#6750A3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--First Name Input-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Firstname"
+                    style="?attr/textInputFilledStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama"
+                    app:boxBackgroundColor="#FEFAFD"
+                    app:boxStrokeColor="#6750A3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Last Name Input-->
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EmailInput"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                app:boxBackgroundColor="#FEFAFD"
+                app:boxStrokeColor="#6750A3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout> <!--Email Input-->
 
             <TextView
                 android:id="@+id/or"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:fontFamily="@font/poppins_semibold"
-
                 android:text="Or"
                 android:textColor="#6750A3"
                 android:textFontWeight="600"

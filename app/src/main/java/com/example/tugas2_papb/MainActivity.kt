@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val passLayout = findViewById<TextInputLayout>(R.id.passLayout)
         val unameLayout = findViewById<TextInputLayout>(R.id.unameLayout)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val btnSignUp =findViewById<Button>(R.id.btnSignUp)
 
         btnLogin.setOnClickListener {
             val username = uname.text.toString()
@@ -45,21 +46,13 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-//            uname.doOnTextChanged { text, start, before, count ->
-//                if (text!!.length < 1){
-//                    unameLayout.error = "Usermane must fullfiled"
-//                }else{
-//
-//                    pass.doOnTextChanged { text, start, before, count ->
-//                        if (text!!.length < 1){
-//                            passLayout.error = "Input you're password"
-//                        }else{
-//
-//                        }
-//                    }
-//                }
-//            }
 
+        }
+
+        btnSignUp.setOnClickListener {
+            Intent(this, SignUpActivity::class.java).also {
+                startActivity(it)
+            }
         }
 
 
